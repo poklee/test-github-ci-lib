@@ -16,19 +16,9 @@
 	</dependencies>
 	<distributionManagement>
 		<repository>
-			<id>teamnerds.xyz</id>
-			<name>Term Nerds Artifactory on Azure DevOps</name>
-			<url>http://52.152.129.50:8080/repository/poklee</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/poklee/test-github-ci-lib</url>
 		</repository>
-		<!-- <repository> <id>teamnerds-azure</id> <name>Term Nerds Artifactory 
-			on Azure DevOps</name> <url>https://pkgs.dev.azure.com/teamnerds/_packaging/teamnerds/maven/v1</url> 
-			<releases> <enabled>true</enabled> </releases> <snapshots> <enabled>true</enabled> 
-			</snapshots> </repository> -->
 	</distributionManagement>
 </project>
