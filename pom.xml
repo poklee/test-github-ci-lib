@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.example.poklee</groupId>
+	<artifactId>github-ci-lib</artifactId>
+	<version>0.0.1</version>
+	<name>github-ci</name>
+	<packaging>jar</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>teamnerds.xyz</id>
+			<name>Term Nerds Artifactory on Azure DevOps</name>
+			<url>http://52.152.129.50:8080/repository/poklee</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<!-- <repository> <id>teamnerds-azure</id> <name>Term Nerds Artifactory 
+			on Azure DevOps</name> <url>https://pkgs.dev.azure.com/teamnerds/_packaging/teamnerds/maven/v1</url> 
+			<releases> <enabled>true</enabled> </releases> <snapshots> <enabled>true</enabled> 
+			</snapshots> </repository> -->
+	</distributionManagement>
+</project>
